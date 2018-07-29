@@ -1,8 +1,9 @@
 language: java
 sudo: true
 dist: trusty
-jdk: oraclejdk8
+jdk:
+  - oraclejdk8
 before_script: 
-  - chmod 777 ./mvn
+  --chmod=+x mvnw
 before_install: 
-  - chmod 777 ./mvn
+  --chmod=+x mvnw
