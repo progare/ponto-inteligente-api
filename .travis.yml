@@ -3,6 +3,6 @@ sudo: true
 dist: trusty
 jdk: oraclejdk8
 before_script: 
-  - chmod 777 ./mvnw
+  - chmod 777 ./mvn
 before_install: 
-  - chmod 777 ./mvnw
+  - chmod 777 ./mvn
