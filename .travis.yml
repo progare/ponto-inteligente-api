@@ -1,12 +1,12 @@
 language: java
-sudo: false
-before_script:
-  - chmod +x ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-before_install:
-  - chmod 777 mvnw  
+sudo: true
 script: 
   - sudo mvn clean package
   - sudo mvn install
   - Dmaven.javadoc.skip=true
 jdk:
   - oraclejdk8
+before_script:
+  - chmod +x ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+before_install:
+  - chmod +x ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
