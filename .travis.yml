@@ -6,4 +6,4 @@ before_install:
 before_script:
   - chmod +x mvn
 script:
-  - chmod +x ./mvn build connectedCheck
+  - chmod +x ./mvnw build connectedCheck
